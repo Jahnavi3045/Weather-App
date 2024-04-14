@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="css/styles.css">
+    {{!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href=""> --}}
+    <i class="fa-solid fa-cloud-sun-rain"></i>
+    
+</head>
+<body>
+    <div class="body">
+        <div class="content">
+        {{>header}}
+        {{!-- <h2>{{title}}</h2> --}}
+        <p>Use this site to get {{title}} </p>
+        <form>
+            <input type="text" placeholder="location" id="search">
+            <button id="button">search</button>
+        </form>
+
+        <p id="msg-one"></p>
+        <p id="msg-two"></p>
+        {{!-- <p>developed by {{name}}</p> --}}
+        </div>
+
+    {{>footer}}
+    </div>
+
+    <script src="js/javascript.js"></script>
+    
+</body>
+</html>
